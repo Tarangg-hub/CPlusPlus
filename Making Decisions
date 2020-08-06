@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char grade;
+    cout << "Enter your Grades form A / B / C\n";
+    cin >> grade ;
+
+    switch(grade)
+    {
+    case 'A':
+    cout << "You gained Excellent grades " << endl;
+    break;
+
+    case 'B':
+    cout << "You performed good grades" << endl;
+    break;
+
+    case 'C':
+        cout << "You can perform better";
+        break ;
+    }
+    return 0;
+}
