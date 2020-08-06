@@ -5,10 +5,11 @@ using namespace std;
 int main()
 {
     float a , b ,c;
-    cout << "Start\n";
-    cin >> a >> b;
+    cout << "Enter First number\n";
+    cin >> a ;
+    cout << "Enter Second number\n";
+    cin >> b;
     c = a*b;
-    cout << c << endl;
-    cout << "\nEnd\n";
+    cout "Product of two numbers is "<< c << endl;
     return 0;
 }
