@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int ele[5], i = 0;
+
+    while(i <= 4){
+    cout << "Enter elements\n";
+    cin >> ele[i];
+    i++;
+    }
+    
+    cout<<"\nYou entered: ";
+    
+    for(i=0;i<=4;i++){
+    cout << ele[i] << endl ;
+    }
+
+    return 0;
+}
