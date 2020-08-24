@@ -1,0 +1,37 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+class Time{
+public:
+	int hours = 0, minutes = 0, seconds = 0;
+	
+void Timeview(int hours ,int minutes ,int seconds){
+	cout <<"The time is = "<< hours <<":" << minutes <<":" << seconds << endl;
+}
+
+void TT(int hours,int minutes,int seconds){
+	hours = hours * 60;
+	minutes = (minutes + hours) * 60;
+	seconds = seconds + minutes;
+	cout << "Total time in seconds is : "<< seconds;
+   }
+};
+
+
+int main()
+{
+	int a, b, c;
+    cout <<"How many hours you played game"<<endl;
+    cin >> a;
+    cout <<"How many minutes you played game"<<endl;
+    cin >> b;
+    cout <<"How many seconds you played game"<<endl;
+    cin >> c;
+
+    Time test;
+	test.Timeview(a, b, c);
+    test.TT(a, b, c);
+    return 0;
+} 
