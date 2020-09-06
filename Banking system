@@ -1,0 +1,120 @@
+#include<iostream>
+using namespace std;
+
+/////////////////////////////////////////////////////////////////////////////
+//                   CREATING NEW ONE
+void create(){
+	int accNo = 786474000, with = 0, depo = 0, accBal = 0, No = 0, i = 0;
+	char name[20], type;
+	
+	cout<<"Enter your name\n";
+	cin>>name;
+	cout<<"Enter last three digits of your choise\n";
+	cin>>No;
+	
+	while(i<=99){
+	
+		if(!(No <= 999)){
+	  		cout<<"Enter valid value\n";
+	  		cin>>No;
+			i++;
+	    }
+	   
+	   		else break;
+    	}
+    	accNo = accNo + No;
+	   	cout<<accNo;
+	   	
+}
+
+////////////////////////////////////////////////////////////////////////////
+//                         DEPOSITES AND WITHDRAWALS
+void withndepo(){
+	int amt = 0, depo = 0, total = 0, with = 0;
+	int num, i=0;
+	cout<<"\nChoose between withdarw or deposite\n"
+	<<"1.Deposite\n"
+	<<"2.Withdraw\n";
+		
+	cin>>num;
+	
+	while(i<=99){
+		if(num == 1){
+			cout<<"Enter amount you want to deposite";
+			cin>>amt;
+			depo = depo + amt;
+		}
+		
+		else if(num == 2){
+			cout<<"Enter amount you want to withdraw";
+			cin>>amt;
+			depo = depo + amt;
+			
+			for(i=0;i<=99;i++)
+			if(!(with <= depo)){
+				cout<<"Please enter valid value";
+				cin>>num;
+			}
+			else break;
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+//                          MAIN
+int main(){
+	int is=0;
+	int choise;
+	
+	cout<<"1.Create new Account\n"
+	<<"2.Information about your Account\n"
+	<<"3.Depost in your Account\n"
+	<<"4.Withdraw cash from your Account\n"
+	<<"5.Delete your Account\n";
+	
+	withndepo();
+	/*cin>>choise;
+	
+	while(is<=99){	
+	  if(!(choise <= 5)){
+	  		cout<<"Enter valid value";
+		}
+		
+		else {
+			cout<<"Hello";
+		switch(choise)
+		{
+			case(1):
+			{
+				create();
+				break;
+			}
+			case(2):
+			{
+				cout<<"Invalid. Enter valid value2222";
+				//user.info();
+				break;
+			}
+			case(3):
+			{
+				cout<<"Invalid. Enter valid value3333";
+				//deposit();
+				break;
+			}
+			case(4):
+			{
+				cout<<"Invalid. Enter valid value4444";
+				//user.withdraw();
+				break;
+			}
+			case(5):
+			{
+				cout<<"Invalid. Enter valid value5555";
+				//user.delete1();
+				break;
+			}
+		}
+	is++;	
+	}*/
+	return 0;
+	}
